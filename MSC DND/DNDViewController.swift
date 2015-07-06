@@ -26,26 +26,9 @@ class DNDViewController: NSViewController {
     override func loadView() {
         super.loadView()
         activeCheck()
-        //updateDescription()
-        getSuppressNotifications()
         
     }
     
-    func getSuppressNotifications(){
-        //In the future we will check for the existience of the file
-        if let prefValue = CFPreferencesCopyAppValue("Active", bundleid) as? Bool {
-            dndactive = prefValue
-           
-        }
-        
-        
-        
-        if dndactive {
-            updateTime()
-        } else{
-            visibleUpdate()
-        }
-    }
     
     func activeCheck(){
         let plist = plistPath.stringByAppendingPathComponent(".msc-dnd.plist")
