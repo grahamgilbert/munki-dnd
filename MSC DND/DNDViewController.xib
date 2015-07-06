@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DNDViewController" customModule="MSC_DND" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="99i-YL-r4k" id="4XW-uk-yiU"/>
+                <outlet property="enableButton" destination="JVf-H9-7Wl" id="26C-RS-r2A"/>
+                <outlet property="quitButton" destination="xnv-nn-tpc" id="TPi-QL-51d"/>
+                <outlet property="textLabel" destination="NSN-d7-xJ5" id="LcD-G1-V3v"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSN-d7-xJ5">
+                    <rect key="frame" x="-35" y="117" width="444" height="44"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Notifications Active" id="re0-OA-vjL">
+                        <font key="font" metaFont="system" size="36"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-H9-7Wl">
+                    <rect key="frame" x="199" y="13" width="151" height="32"/>
+                    <buttonCell key="cell" type="push" title="Stop Notifications" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="asq-tJ-rVw">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="stopNotifications:" target="-2" id="t8Y-IE-xTh"/>
+                    </connections>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99i-YL-r4k">
+                    <rect key="frame" x="28" y="49" width="318" height="56"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="Ein-Kg-sDY">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnv-nn-tpc">
+                    <rect key="frame" x="24" y="13" width="66" height="32"/>
+                    <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RIW-B7-6cN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quit:" target="-2" id="4ET-AR-xrI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="410.5" y="208.5"/>
+        </customView>
+    </objects>
+</document>
