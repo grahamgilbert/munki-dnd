@@ -37,7 +37,7 @@
                         <action selector="stopNotifications:" target="-2" id="t8Y-IE-xTh"/>
                     </connections>
                 </button>
-                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99i-YL-r4k">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99i-YL-r4k">
                     <rect key="frame" x="28" y="49" width="318" height="56"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="Ein-Kg-sDY">
                         <font key="font" metaFont="system"/>

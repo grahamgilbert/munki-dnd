@@ -93,12 +93,6 @@ class DNDViewController: NSViewController {
         descriptionLabel.hidden = false
     }
     
-
-    
-    func updateTime(){
-
-        textLabel.stringValue = getCurrentTime().time
-    }
     
     func addHoursToCurrDateTime(hours: Int) -> String{
         let seconds = hours * 60 * 60
@@ -181,17 +175,6 @@ extension NSDate {
         return formatter.stringFromDate(self)
     }
     
-}
-
-func getCurrentTime() -> (time: String, date: String) {
-    let date = NSDate()
-    let dateFormatter = NSDateFormatter()
-    let timeFormatter = NSDateFormatter()
-    dateFormatter.dateStyle = .ShortStyle
-    timeFormatter.timeStyle = .ShortStyle
-    let dateValue = dateFormatter.stringFromDate(date)
-    let timeValue = timeFormatter.stringFromDate(date)
-    return (timeValue, dateValue)
 }
 
 public func ==(lhs: NSDate, rhs: NSDate) -> Bool {

@@ -1,6 +1,6 @@
 USE_PKGBUILD=1
 include /usr/local/share/luggage/luggage.make
-PACKAGE_VERSION=0.4.0
+PACKAGE_VERSION=0.0.1
 TITLE=msc_dnd
 PACKAGE_NAME=${TITLE}
 REVERSE_DOMAIN=com.grahamgilbert
