@@ -11,7 +11,7 @@ build: clean-build l_Applications
 	xcodebuild -configuration Release
 
 clean-build:
-	rm -rf build
+	@sudo rm -rf build
 
 l_munki: l_usr_local build
 	@sudo mkdir -p ${WORK_D}/usr/local/munki/preflight.d
