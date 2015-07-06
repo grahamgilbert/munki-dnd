@@ -9,7 +9,6 @@
 import Cocoa
 import CoreFoundation
 import Foundation
-//import DateCompare
 
 class DNDViewController: NSViewController {
 

@@ -14,7 +14,6 @@
 		FC55CBDB1B495507007A8BC8 /* DNDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55CBD91B495507007A8BC8 /* DNDViewController.swift */; };
 		FC55CBDC1B495507007A8BC8 /* DNDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC55CBDA1B495507007A8BC8 /* DNDViewController.xib */; };
 		FC55CBE01B497644007A8BC8 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55CBDF1B497644007A8BC8 /* EventMonitor.swift */; };
-		FC87C33B1B4A818F0028F05D /* DateCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC87C33A1B4A818F0028F05D /* DateCompare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		FC55CBD91B495507007A8BC8 /* DNDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDViewController.swift; sourceTree = "<group>"; };
 		FC55CBDA1B495507007A8BC8 /* DNDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNDViewController.xib; sourceTree = "<group>"; };
 		FC55CBDF1B497644007A8BC8 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = ../EventMonitor.swift; sourceTree = "<group>"; };
-		FC87C33A1B4A818F0028F05D /* DateCompare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCompare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +81,6 @@
 			children = (
 				FC55CBDF1B497644007A8BC8 /* EventMonitor.swift */,
 				FC372EA21B494F26008E258A /* AppDelegate.swift */,
-				FC87C33A1B4A818F0028F05D /* DateCompare.swift */,
 				FC55CBD91B495507007A8BC8 /* DNDViewController.swift */,
 				FC55CBDA1B495507007A8BC8 /* DNDViewController.xib */,
 				FC372EA41B494F26008E258A /* Images.xcassets */,
@@ -219,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC55CBE01B497644007A8BC8 /* EventMonitor.swift in Sources */,
-				FC87C33B1B4A818F0028F05D /* DateCompare.swift in Sources */,
 				FC372EA31B494F26008E258A /* AppDelegate.swift in Sources */,
 				FC55CBDB1B495507007A8BC8 /* DNDViewController.swift in Sources */,
 			);
