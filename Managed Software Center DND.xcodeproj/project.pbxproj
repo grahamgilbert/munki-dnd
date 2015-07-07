@@ -27,12 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC372E9D1B494F26008E258A /* MSC DND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSC DND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC372E9D1B494F26008E258A /* Managed Software Center DND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Managed Software Center DND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC372EA11B494F26008E258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC372EA21B494F26008E258A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC372EA41B494F26008E258A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC372EA71B494F26008E258A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FC372EAD1B494F26008E258A /* MSC DNDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSC DNDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC372EAD1B494F26008E258A /* Managed Software Center DNDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Managed Software Center DNDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC372EB21B494F26008E258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC372EB31B494F26008E258A /* MSC_DNDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSC_DNDTests.swift; sourceTree = "<group>"; };
 		FC55CBD91B495507007A8BC8 /* DNDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		FC372E9E1B494F26008E258A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC372E9D1B494F26008E258A /* MSC DND.app */,
-				FC372EAD1B494F26008E258A /* MSC DNDTests.xctest */,
+				FC372E9D1B494F26008E258A /* Managed Software Center DND.app */,
+				FC372EAD1B494F26008E258A /* Managed Software Center DNDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC372E9C1B494F26008E258A /* MSC DND */ = {
+		FC372E9C1B494F26008E258A /* Managed Software Center DND */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC372EB71B494F26008E258A /* Build configuration list for PBXNativeTarget "MSC DND" */;
+			buildConfigurationList = FC372EB71B494F26008E258A /* Build configuration list for PBXNativeTarget "Managed Software Center DND" */;
 			buildPhases = (
 				FC372E991B494F26008E258A /* Sources */,
 				FC372E9A1B494F26008E258A /* Frameworks */,
@@ -131,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = "MSC DND";
+			name = "Managed Software Center DND";
 			productName = "MSC DND";
-			productReference = FC372E9D1B494F26008E258A /* MSC DND.app */;
+			productReference = FC372E9D1B494F26008E258A /* Managed Software Center DND.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FC372EAC1B494F26008E258A /* MSC DNDTests */ = {
+		FC372EAC1B494F26008E258A /* Managed Software Center DNDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC372EBA1B494F26008E258A /* Build configuration list for PBXNativeTarget "MSC DNDTests" */;
+			buildConfigurationList = FC372EBA1B494F26008E258A /* Build configuration list for PBXNativeTarget "Managed Software Center DNDTests" */;
 			buildPhases = (
 				FC372EA91B494F26008E258A /* Sources */,
 				FC372EAA1B494F26008E258A /* Frameworks */,
@@ -149,9 +149,9 @@
 			dependencies = (
 				FC372EAF1B494F26008E258A /* PBXTargetDependency */,
 			);
-			name = "MSC DNDTests";
+			name = "Managed Software Center DNDTests";
 			productName = "MSC DNDTests";
-			productReference = FC372EAD1B494F26008E258A /* MSC DNDTests.xctest */;
+			productReference = FC372EAD1B494F26008E258A /* Managed Software Center DNDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC372E981B494F26008E258A /* Build configuration list for PBXProject "MSC DND" */;
+			buildConfigurationList = FC372E981B494F26008E258A /* Build configuration list for PBXProject "Managed Software Center DND" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -185,8 +185,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC372E9C1B494F26008E258A /* MSC DND */,
-				FC372EAC1B494F26008E258A /* MSC DNDTests */,
+				FC372E9C1B494F26008E258A /* Managed Software Center DND */,
+				FC372EAC1B494F26008E258A /* Managed Software Center DNDTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		FC372EAF1B494F26008E258A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC372E9C1B494F26008E258A /* MSC DND */;
+			target = FC372E9C1B494F26008E258A /* Managed Software Center DND */;
 			targetProxy = FC372EAE1B494F26008E258A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -355,7 +355,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "MSC DND/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Managed Software Center DND";
 			};
 			name = Debug;
 		};
@@ -366,7 +366,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "MSC DND/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Managed Software Center DND";
 			};
 			name = Release;
 		};
@@ -385,7 +385,7 @@
 				);
 				INFOPLIST_FILE = "MSC DNDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Managed Software Center DNDTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSC DND.app/Contents/MacOS/MSC DND";
 			};
 			name = Debug;
@@ -401,7 +401,7 @@
 				);
 				INFOPLIST_FILE = "MSC DNDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Managed Software Center DNDTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSC DND.app/Contents/MacOS/MSC DND";
 			};
 			name = Release;
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC372E981B494F26008E258A /* Build configuration list for PBXProject "MSC DND" */ = {
+		FC372E981B494F26008E258A /* Build configuration list for PBXProject "Managed Software Center DND" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC372EB51B494F26008E258A /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC372EB71B494F26008E258A /* Build configuration list for PBXNativeTarget "MSC DND" */ = {
+		FC372EB71B494F26008E258A /* Build configuration list for PBXNativeTarget "Managed Software Center DND" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC372EB81B494F26008E258A /* Debug */,
@@ -427,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC372EBA1B494F26008E258A /* Build configuration list for PBXNativeTarget "MSC DNDTests" */ = {
+		FC372EBA1B494F26008E258A /* Build configuration list for PBXNativeTarget "Managed Software Center DNDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC372EBB1B494F26008E258A /* Debug */,

@@ -31,14 +31,14 @@ else:
         # Is the current date greater than the DND date?
         saved_time = datetime.strptime(str(plist['DNDEndDate']), "%Y-%m-%d %H:%M:%S +0000")
         current_time = datetime.now()
-        if saved_time > current_time:
+        if saved_time < current_time:
             # print "Current time is greater"
             # If yes, remove the file and set the Munki pref for suppress notifications to False
             os.remove(FILE_LOCATION)
             munkicommon.set_pref('SuppressUserNotification', False)
             sys.exit(0)
         else:
-            # print "Saved Time in greater"
+            # print "Saved Time is greater"
             munkicommon.set_pref('SuppressUserNotification', True)
             sys.exit(0)
             # If no, make sure suppress notifications is True
