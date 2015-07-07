@@ -1,6 +1,10 @@
 # munki-dnd
 A 'do not disturb' menubar app for Munki for Yosemite and above.
 
+![Active](https://github.com/grahamgilbert/munki-dnd/blob/master/images/active.png)
+
+![Inactive](https://github.com/grahamgilbert/munki-dnd/blob/master/images/disabled.png)
+
 ## Usage
 
 By default, this will suppress user notifications from MSC for 24 hours. To adjust this period, use the following:
