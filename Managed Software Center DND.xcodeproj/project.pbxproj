@@ -386,7 +386,7 @@
 				INFOPLIST_FILE = "MSC DNDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "Managed Software Center DNDTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSC DND.app/Contents/MacOS/MSC DND";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Managed Software Center DND.app/Contents/MacOS/Managed Software Center DND";
 			};
 			name = Debug;
 		};
@@ -402,7 +402,7 @@
 				INFOPLIST_FILE = "MSC DNDTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "Managed Software Center DNDTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSC DND.app/Contents/MacOS/MSC DND";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Managed Software Center DND.app/Contents/MacOS/Managed Software Center DND";
 			};
 			name = Release;
 		};

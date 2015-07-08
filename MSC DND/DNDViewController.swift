@@ -11,17 +11,18 @@ import CoreFoundation
 import Foundation
 
 class DNDViewController: NSViewController {
-
+    
     @IBOutlet var textLabel: NSTextField!
     @IBOutlet var enableButton: NSButton!
     @IBOutlet var quitButton: NSButton!
     @IBOutlet var descriptionLabel: NSTextField!
-
+    
     var dndactive = false
     let bundleid = "com.grahamgilbert.mscdnd"
-
+    
     let plistPath = "/Users/Shared"
     var dndHours = 24
+    var notificationsEnabled = true
     
     override func loadView() {
         super.loadView()
@@ -68,10 +69,10 @@ class DNDViewController: NSViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(15, target:self, selector: Selector("activeCheck"), userInfo: nil, repeats: false)
         
     }
-
+    
     
     func updateDescription(){
-       let prefValue = CFPreferencesCopyAppValue("DNDHours", bundleid) as? Int
+        let prefValue = CFPreferencesCopyAppValue("DNDHours", bundleid) as? Int
         
         if prefValue != nil {
             dndHours = prefValue!
@@ -80,9 +81,9 @@ class DNDViewController: NSViewController {
         var descriptionString = ""
         
         if dndHours == 1{
-        descriptionString = "Notifications for updates by Managed Software Center will be suppressed for \(dndHours) hour."
+            descriptionString = "Notifications for updates by Managed Software Center will be suppressed for \(dndHours) hour."
         } else{
-        descriptionString = "Notifications for updates by Managed Software Center will be suppressed for \(dndHours) hours."
+            descriptionString = "Notifications for updates by Managed Software Center will be suppressed for \(dndHours) hours."
         }
         
         descriptionLabel.stringValue = descriptionString
@@ -127,38 +128,50 @@ class DNDViewController: NSViewController {
     }
     
     func disableUI(date: String){
-        enableButton.enabled = false
+        notificationsEnabled = false
+        enableButton.title = "Enable Notifications"
         textLabel.stringValue = "Notifications Disabled"
         descriptionLabel.stringValue = "Notifications will resume \(date)"
     }
     
     func enableUI(){
-        enableButton.enabled = true
+        notificationsEnabled = true
+        enableButton.title = "Stop Notifications"
         textLabel.stringValue = "Notifications Active"
+        updateDescription()
         visibleUpdate()
     }
     
-
+    
 }
 
 extension DNDViewController {
-
+    
     @IBAction func quit(sender: NSButton) {
         NSApplication.sharedApplication().terminate(sender)
     }
-
+    
     @IBAction func stopNotifications(sender: AnyObject) {
         //Calculate the time difference
         let dndEndDate = addHoursToCurrDateTime(dndHours)
-        print(dndEndDate)
-        //Write plist
-        writeDateToPlist(dndEndDate)
-        //Disable ui
-        disableUI(dndEndDate)
-        checkStateOnTimer()
+        print(notificationsEnabled)
+        if notificationsEnabled {
+            //Write plist
+            writeDateToPlist(dndEndDate)
+            //Disable ui
+            disableUI(dndEndDate)
+            checkStateOnTimer()
+        }
+        else {
+            var error: NSError?
+            let plist = plistPath.stringByAppendingPathComponent(".msc-dnd.plist")
+            let fileManager = NSFileManager.defaultManager()
+            fileManager.removeItemAtPath(plist, error: &error)
+            enableUI()
+        }
     }
-
-
+    
+    
 }
 
 extension NSDate {
